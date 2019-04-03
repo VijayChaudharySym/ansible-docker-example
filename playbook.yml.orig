@@ -1,11 +1,4 @@
 ---
-- name: Transfer and execute a script.
-  hosts: all
-  tasks:
-
-     - name: Copy and Execute the script
-       command: whoami
-
 - hosts: localhost
   tasks:
     - docker_container:
@@ -17,4 +10,3 @@
   hosts: example-play
   roles:
     - name: "docker-role"
-
