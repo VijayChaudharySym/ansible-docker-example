@@ -5,6 +5,8 @@
 
      - name: Copy and Execute the script
        command: whoami
+       command: pip install docker
+
 
 - hosts: localhost
   tasks:
